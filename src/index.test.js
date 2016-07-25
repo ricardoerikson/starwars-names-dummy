@@ -41,6 +41,11 @@ describe('starwars-names-lib', function () {
             var randomItems = starWarsNames.randomArrayWithoutRepeat(4);
             expect((new Set(randomItems)).size).to.be.equal(4);
         });
+
+        it('should not return an array greater than starWarsNames.all', function () {
+            var randomItems = starWarsNames.randomArrayWithoutRepeat(starWarsNames.all.length + 50);
+            expect(randomItems.length).not.to.be.above(starWarsNames.all.length);
+        });
     });
 
 });

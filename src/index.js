@@ -21,6 +21,9 @@ function random(number) {
 }
 
 function randomArrayWithoutRepeat(number) {
+    if (number > starWarsNames.length) {
+        return Array.from(new Set(starWarsNames.all));
+    }
     var randomItems = [];
     do {
         var item = getRandomItem();
