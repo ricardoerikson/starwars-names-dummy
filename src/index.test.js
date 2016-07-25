@@ -29,5 +29,10 @@ describe('starwars-names-lib', function () {
                 expect(starWarsNames.all).to.include(item);
             });
         });
+
+        it('should return and empty array if passed zero', function () {
+            var randomItems = starWarsNames.random(0);
+            expect(randomItems).to.have.length(0);
+        });
     });
 });
