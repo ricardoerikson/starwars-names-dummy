@@ -35,4 +35,12 @@ describe('starwars-names-lib', function () {
             expect(randomItems).to.have.length(0);
         });
     });
+
+    describe('randomArrayWithoutRepeat', function () {
+        it('should return and array without repeated values', function () {
+            var randomItems = starWarsNames.randomArrayWithoutRepeat(4);
+            expect((new Set(randomItems)).size).to.be.equal(4);
+        });
+    });
+
 });
