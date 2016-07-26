@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardoerikson/starwars-names.git"
+    "url": "https://github.com/ricardoerikson/starwars-names-lib.git"
   },
   "keywords": [
     "random",
@@ -21,9 +21,9 @@
   "author": "Ricardo Erikson <ricardoerikson@gmail.com> (http://ricardoerikson.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ricardoerikson/starwars-names/issues"
+    "url": "https://github.com/ricardoerikson/starwars-names-lib/issues"
   },
-  "homepage": "https://github.com/ricardoerikson/starwars-names#readme",
+  "homepage": "https://github.com/ricardoerikson/starwars-names-lib#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
   },
