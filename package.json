@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/ricardoerikson/starwars-names-lib2#readme",
   "dependencies": {
+    "lodash": "4.14.0",
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
@@ -35,7 +36,7 @@
     "semantic-release": "^4.3.5"
   },
   "config": {
-    "commitizen" : {
+    "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
   }
