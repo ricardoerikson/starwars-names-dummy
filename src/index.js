@@ -1,6 +1,7 @@
 var uniqueRandomArray = require('unique-random-array');
 var starWarsNames = require('./starwars-names.json');
 var getRandomItem = uniqueRandomArray(starWarsNames);
+var _ = require('lodash');
 
 module.exports = {
     all: starWarsNames,
@@ -22,7 +23,7 @@ function random(number) {
 
 function randomArrayWithoutRepeat(number) {
     if (number > starWarsNames.length) {
-        return Array.from(new Set(starWarsNames.all));
+        return _.uniq(starWarsNames.all);
     }
     var randomItems = [];
     do {

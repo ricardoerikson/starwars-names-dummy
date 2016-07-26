@@ -1,5 +1,6 @@
 var expect = require('chai').expect;
 var starWarsNames = require('./index.js');
+var _ = require('lodash');
 
 describe('starwars-names-lib', function () {
     describe('all', function () {
@@ -39,7 +40,7 @@ describe('starwars-names-lib', function () {
     describe('randomArrayWithoutRepeat', function () {
         it('should return and array without repeated values', function () {
             var randomItems = starWarsNames.randomArrayWithoutRepeat(4);
-            expect((new Set(randomItems)).size).to.be.equal(4);
+            expect(_.uniq(randomItems).length).to.be.equal(4);
         });
 
         it('should not return an array greater than starWarsNames.all', function () {
