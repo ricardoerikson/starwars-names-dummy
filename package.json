@@ -1,5 +1,5 @@
 {
-  "name": "starwars-names-lib",
+  "name": "starwars-names-lib2",
   "version": "0.0.0-semantically-released",
   "description": "Get random Star Wars names",
   "main": "src/index.js",
@@ -11,19 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardoerikson/starwars-names-lib.git"
+    "url": "https://github.com/ricardoerikson/starwars-names-lib2.git"
   },
   "keywords": [
     "random",
     "star",
     "wars"
   ],
-  "author": "Ricardo Erikson <ricardoerikson@gmail.com> (http://ricardoerikson.io/)",
+  "author": "Ricardo Erikson <ricardoerikson@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ricardoerikson/starwars-names-lib/issues"
+    "url": "https://github.com/ricardoerikson/starwars-names-lib2/issues"
   },
-  "homepage": "https://github.com/ricardoerikson/starwars-names-lib#readme",
+  "homepage": "https://github.com/ricardoerikson/starwars-names-lib2#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
   },
