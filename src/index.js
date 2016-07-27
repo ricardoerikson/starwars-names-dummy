@@ -27,13 +27,8 @@ function randomArrayWithoutRepeat(number) {
     }
     var randomItems = [];
     do {
-        var item = getRandomItem();
-        var repeated = randomItems.some(function(element) {
-            return element == item;
-        });
-        if (!repeated) {
-            randomItems.push(item);
-        }
+        randomItems.push(getRandomItem());
+        randomItems = _.uniq(randomItems);
     } while(randomItems.length < number );
     return randomItems;
 }
