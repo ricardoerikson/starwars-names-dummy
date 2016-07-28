@@ -1,6 +1,6 @@
-var expect = require('chai').expect;
-var starWarsNames = require('./index.js');
-var _ = require('lodash');
+import {expect} from 'chai';
+import starWarsNames from'./index.js';
+import _ from'lodash';
 
 describe('starwars-names-lib', function () {
     describe('all', function () {
