@@ -8,8 +8,8 @@
     "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "commit": "git-cz",
-    "cover": "nyc npm t && nyc report --reporter=text-lcov > coverage/lcov.info",
-    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "cover": "nyc npm t",
+    "report-coverage": "nyc report --reporter=text-lcov | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test:watch": "npm t -- -w",
     "test": "mocha src/index.test.js --compilers js:babel-register"
