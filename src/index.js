@@ -23,6 +23,9 @@ function random(number) {
 }
 
 function randomArrayWithoutRepeat(number) {
+    if(number === undefined || number == 0) {
+        return [];
+    }
     if (number > starWarsNames.length) {
         return _.uniq(starWarsNames.all);
     }
